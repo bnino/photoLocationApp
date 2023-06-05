@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Camara</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button expand="full" (click)="takePhoto()">Tomar Foto</ion-button>
+
+  <ion-button expand="full" (click)="savePhoto()" [disabled]="!photo">Save Photo</ion-button>
+
+  <ion-img *ngIf="foto" [src]="foto"></ion-img>
+  <ion-button *ngIf="foto" (click)="savePhoto()">
+    <ion-icon name="save-outline"></ion-icon>
+  </ion-button>
+</ion-content>

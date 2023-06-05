@@ -1,0 +1,7 @@
+{
+  "name": "AppFotosGPS",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
